@@ -1,0 +1,363 @@
+body {
+    font-family: ff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.fef {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.front-card-container {
+    height: 15vw;
+    width: 25vw;
+    position: fixed;
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.front-card-content, .back-card-content {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+}
+
+.front-card-container .logo {
+    object-fit: contain;
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.front-card-container #top, #btm_name, #btm_date, #cvc {
+    font-family: 'Space Grotesk';
+    color: hsl(0, 0%, 100%);
+}
+
+.front-card-container #top {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 5%;
+    right: 5%;
+    letter-spacing: 0.3vw;
+    font-size: 1.5vw;
+}
+
+.front-card-container #btm_name, #btm_date {
+    position: absolute;
+    bottom: 1vw;
+    font-size: 0.8vw;
+}
+
+.front-card-container #btm_date {
+    right: 5%;
+}
+
+.front-card-container #btm_name {
+    left: 5%;
+}
+
+.back-card-container {
+    height: 15vw;
+    width: 25vw;
+    position: fixed;
+    margin-left: 15%;
+    margin-top: 25%;
+}
+
+.back-card-content #cvc {
+    position: absolute;
+    top: 38%;
+    right: 10%;
+    letter-spacing: 0.2vw;
+    font-size: 1vw;
+}
+
+.ss_1 {
+    width: 30%;
+    height: 100%;
+    float: left;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.ss_2 { 
+    width: 70%;
+    height: 100%;
+    float: left;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 25vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    height: 15vw;
+}
+
+label, input {
+    display: block;
+}
+
+input[type=text], input[type=number] {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    font-family: 'Space Grotesk';
+    color:hsl(278, 68%, 11%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+
+input[type=text]:focus {
+    color: hsl(278, 94%, 30%)
+}
+
+::placeholder {
+    color: hsl(279, 6%, 55%);
+    letter-spacing: 1px;
+}
+
+#exp_cvc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp_date {
+    float: left;
+    width: 50%;
+}
+
+#__cvc {
+    float: right;
+    width: 45%;
+    padding-left: 0px;
+}
+
+.mmyy {
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn_submit {
+    padding: 10px 0 10px 0;
+}
+
+#mmyy1 {
+    width: 50%;
+    margin-right: 5px;
+}
+
+#mmyy2 {
+    width: 50%; 
+    margin-left: 5px;
+}
+
+#confirm, #continue {
+    background-color: hsl(278, 68%, 11%);
+    width: 100%;
+    border: none;
+    color: hsl(270, 3%, 87%);
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Space Grotesk';
+    padding: 10px 0 10px 0;
+    margin-top: 10px;
+}
+
+#confirm:hover, #continue:hover {
+    background-color: hsl(279, 6%, 55%);
+    transition: 0.2s;
+}
+
+
+label {
+    font-family: 'Space Grotesk';
+    font-size: 11.5px;
+    font-weight: 600;
+    color: hsl(278, 68%, 11%);
+    letter-spacing: 1px;
+}
+
+/*-----------------------*/
+:root {
+    --clr-primary: #2962ff;
+}
+
+.thank-you-fragment {
+    width: 30%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content_wjs {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Space Grotesk';
+}
+
+#p_thankyou {
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: hsl(278, 68%, 11%);
+}
+
+#p_thankyou_sub {
+    font-size: 15px;
+    word-spacing: 2px;
+    color: hsl(279, 6%, 55%);
+}
+
+#icon-complete {
+    width: 5vw;
+    height: 5vw;
+}
+
+#continue {
+    margin-top: 25px;
+}
+
+#error_msg {
+    color: hsl(0, 100%, 66%);
+    font-size: 10px;
+}
+
+
+@media (max-width: 800px) {
+    .ss_1 {
+        width: 100%;
+        height: 30%;
+        background-image: url(images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    
+    .ss_2 { 
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .front-card-container {
+        height: 25vw;
+        width: 45vw;
+        position: absolute;
+        margin-left: 10%;
+        margin-top: 20vw;
+        z-index: 1;
+    }
+
+    .back-card-container {
+        height: 25vw;
+        width: 45vw;
+        position: absolute;
+        margin-left: 35vw;
+        margin-top: 8vw;
+    }
+
+    .container {
+        width: 50vw;
+        height: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .front-card-container .logo {
+        object-fit: contain;
+        height: 10vw;
+        width: 10vw;
+        position: absolute;
+        top: 2vw;
+        left: 2vw;
+    }
+    
+    .front-card-container #top, #btm_name, #btm_date, #cvc {
+        font-family: 'Space Grotesk';
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .front-card-container #top {
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 5%;
+        right: 5%;
+        letter-spacing: 0.3vw;
+        font-size: 3vw;
+    }
+    
+    .front-card-container #btm_name, #btm_date {
+        position: absolute;
+        bottom: 1vw;
+        font-size: 2vw;
+    }
+    
+    .front-card-container #btm_date {
+        right: 5%;
+    }
+    
+    .front-card-container #btm_name {
+        left: 5%;
+    }
+    
+    .back-card-content #cvc {
+        position: absolute;
+        top: 9vw;
+        right: 10%;
+        letter-spacing: 0.2vw;
+        font-size: 2vw;
+    }
+
+    .content_wjs {
+        text-align: center;
+        width: 40vw;
+        height: 20vw;
+        font-family: 'Space Grotesk';
+    }
+}
